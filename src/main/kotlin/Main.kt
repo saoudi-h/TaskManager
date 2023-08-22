@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
     val taskManager = TaskManager()
 
     taskManager.addTask("Faire les courses")
