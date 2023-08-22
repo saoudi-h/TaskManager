@@ -2,7 +2,7 @@ class TaskManager {
     private var taskList:MutableList<Task> = mutableListOf()
     fun addTask(title:String){
         if(title.length>0){
-            taskList.add(Task(title, taskList.count()-1))
+            taskList.add(Task(title, taskList.count()))
         }
     }
 
