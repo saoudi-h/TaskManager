@@ -1,7 +1,10 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
+    val taskManager = TaskManager()
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    taskManager.addTask("Faire les courses")
+    taskManager.addTask("Apprendre Kotlin")
+
+    taskManager.completeTask(1)
+
+    taskManager.printTasks()
 }
