@@ -1,13 +1,5 @@
-class Task {
-
-    private var id:Int
-    private var title: String
-    private var isCompleted: Boolean
-
-    init{
-        id = 0
-        title = ""
-        isCompleted = false
+class Task(val title: String, val id: Int, var isCompleted: Boolean = false) {
+    override fun toString(): String {
+        return "Task(title='$title', id=$id, isCompleted=$isCompleted)"
     }
-
 }
